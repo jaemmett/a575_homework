@@ -1,0 +1,12 @@
+du -s * -h | sort -n -r | head -10 > ../users/jeem9157/hyades_top_files.txt
+
+999G	aklypin
+657M	gordonm
+452G	yslee
+397M	schonfsj
+378M	andic
+272G	jrvander
+216M	laurel07
+213G	lost+found
+200G	mercy5
+191G	eklimek

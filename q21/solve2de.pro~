@@ -118,7 +118,7 @@ pro solve2de
 
 ;Central pressure of the Sun
         
-        n_const=(((4.0*!pi)^(1.0/n))/(n+1.0))*(((-e1^((n+1.0)*(n-1.0)))*z1 )^((1.0-n)/n))
+        n_const=(((4.0*!pi)^(1.0/n))/(n+1.0))*(((-e1^((n+1.0)/(n-1.0)))*z1 )^((1.0-n)/n))
         k_const=n_const*grav_const*(m_sun^((n-1.0)/n))*(r_sun^((3.0-n)/n))
         
         p_c_sun=k_const*(rho_c_sun^((n+1.0)/n))
@@ -145,6 +145,7 @@ pro solve2de
 ;Print computed constants and parameters
         
         print,'Xsi 1',e1
+        print,'Z 1',z1
         print,'Rho_central/Rho_avg',rho_c_sun/rho_avg_sun
         print,'N_n',n_const
         print,'W_n',w_const
