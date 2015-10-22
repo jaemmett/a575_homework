@@ -1,0 +1,11 @@
+Midterm Q1
+
+500 images x 62 detectors/image x (2048x4096) pixels/detector x (8 bits/byte x 2 bytes/pixel)
+
+	= 4.16e12 bits = 5.20e11 bytes
+
+The > df command on my desktop indicates that I have about 8.8e8 bytes available on disk. This is insufficient to load DECCAM into memory. 
+
+The > df command on Hyades indicates that Hyades has abount 8.4e8 bytes available on disk. This is insufficient to load DECCAM into memory. 
+
+

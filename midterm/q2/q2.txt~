@@ -1,0 +1,12 @@
+Midterm Q2
+
+	(a) Rename file from file.txt to file.txt.old:
+	    > mv file.txt file.txt.old
+
+	(b) Rename all files in a directory with extension .txt to .txt.old:
+	    > rename .txt .txt.old *.txt
+
+	(c) Rename all files in a directory with extension .txt to extension .dat:
+            > rename .txt .dat *.txt
+
+	(d) mv file1 file2 file3 ./file1.old ./file2.old ./file3.old 
