@@ -24,14 +24,13 @@ for i in range(len(cume_dndm_mass)):
 	cume_dndm_mass[i]=cume
 
 for i in range(len(cume_dndm_mass)):
-	act_deviates[i]=mass_sample[cume_dndm_mass.index(min(abs(cume_dndm_mass-uni_deviates[i])))]
-
-
-
-#act_deviates=((min_mass**-1.35)-1.35*uni_deviates)**(-1.0/1.35)
-#mass_dist=n_stars*act_deviates
+        #print abs(cume_dndm_mass-uni_deviates[i]),min(abs(cume_dndm_mass-uni_deviates[i]))
+	act_deviates[i]=mass_sample[np.where(abs((cume_dndm_mass/max(cume_dndm_mass))-uni_deviates[i])==min(abs((cume_dndm_mass/max(cume_dndm_mass))-uni_deviates[i])))]
 
 print act_deviates
-#plt.hist(act_deviates,bins=50)
-#plt.plot(mass_sample,dndm_sample)
-#plt.show()
+plt.hist(act_deviates,bins=100)
+#plt.plot(mass_sample,cume_dndm_mass/max(cume_dndm_mass))
+plt.xlim(0.5,100.0)
+plt.yscale('log')
+plt.xscale('log')
+plt.show()
